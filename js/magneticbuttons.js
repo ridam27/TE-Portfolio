@@ -1,24 +1,26 @@
-// JavaScript File: magneticbuttons.js
-
 document.addEventListener('DOMContentLoaded', function () {
-    const magnetButton = document.querySelector('.magnet-button');
-    const magneticArea = document.querySelector('.magnetic');
+    const magnetButtons = document.querySelectorAll('.magnet-button');
+    const magneticAreas = document.querySelectorAll('.magnetic');
 
-    magneticArea.addEventListener('mousemove', function (e) {
-        const magneticAreaRect = magneticArea.getBoundingClientRect();
-        const mouseX = e.clientX - magneticAreaRect.left;
-        const mouseY = e.clientY - magneticAreaRect.top;
+    magneticAreas.forEach((magneticArea, index) => {
+        const magnetButton = magnetButtons[index];
 
-        const centerX = magneticAreaRect.width / 2;
-        const centerY = magneticAreaRect.height / 2;
+        magneticArea.addEventListener('mousemove', function (e) {
+            const magneticAreaRect = magneticArea.getBoundingClientRect();
+            const mouseX = e.clientX - magneticAreaRect.left;
+            const mouseY = e.clientY - magneticAreaRect.top;
 
-        const deltaX = (mouseX - centerX) * 0.3;
-        const deltaY = (mouseY - centerY) * 0.3;
+            const centerX = magneticAreaRect.width / 2;
+            const centerY = magneticAreaRect.height / 2;
 
-        magnetButton.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-    });
+            const deltaX = (mouseX - centerX) * 0.3;
+            const deltaY = (mouseY - centerY) * 0.3;
 
-    magneticArea.addEventListener('mouseleave', function () {
-        magnetButton.style.transform = `translate(0px, 0px)`;
+            magnetButton.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+        });
+
+        magneticArea.addEventListener('mouseleave', function () {
+            magnetButton.style.transform = `translate(0px, 0px)`;
+        });
     });
 });

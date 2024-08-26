@@ -10,6 +10,10 @@
     --accent-color:#1f5eff; 
     --heading-color:#ffffff;
     --text-color:#000000;
+
+    --font-heading:"Roboto", sans-serif;
+    --font-paragraph:"Lato", sans-serif;
+    --font-primary:"Poppins", sans-serif;
 }
 
 body{
@@ -34,7 +38,7 @@ header{
 }
 
 header .logo{
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-heading);
     color: black;
 }
 
@@ -55,7 +59,7 @@ header .navbar ul li{
 header .navbar ul li a{
     text-decoration: none;
     color: #000000;
-    font-family: "Lato", sans-serif;
+    font-family: var(--font-paragraph);
     position: relative;
     display: inline-block;
     font-size: 1rem;
@@ -83,6 +87,7 @@ header .navbar ul li a:hover::after {
 /* MAGNETIC BUTTONS */
 
 .magnetic {
+    display: inline-block;
     position: relative; 
 }
 
@@ -91,7 +96,7 @@ header .navbar ul li a:hover::after {
     background-color: white;
     color: var(--accent-color);
     border: 2px solid var(--accent-color);
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
@@ -101,6 +106,49 @@ header .navbar ul li a:hover::after {
 .magnet-button:hover{
     background-color: var(--accent-color);
     color: white;
-    
 }
 
+.intro-section{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    align-items: center;
+    justify-content:space-evenly;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.intro-text1{
+    font-family: var(--font-primary);
+    position: relative;
+    font-size: 3.5rem;
+}
+
+/* Animated Text >>> Typewriter Effect ---> CSS Starts  */
+
+.type1{
+    display: inline-block;
+    color: #000000;
+    font-family: var(--font-paragraph);
+    font-size: 2.5rem;
+}
+
+.type2{
+    margin-left: 0.5rem;
+    display: inline-block;
+    color: var(--accent-color);
+    font-family: var(--font-paragraph);
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+}
+
+/* Animated Text >>> Typewriter Effect ---> CSS Ends  */
+
+.intro-button{
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.intro-img{
+    height: 550px;
+    width: 550px;
+}
