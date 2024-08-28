@@ -17,7 +17,8 @@
 }
 
 body{
-    background-image: url('../img/bg.jpg');
+    /* background-image: url('../img/bg.jpg'); */
+    background-color: #fff;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +26,7 @@ body{
 }
 
 header{
+    background-color: #f0f0f0;
     padding: 1.5rem 3rem;
     width: calc(100% - 4rem);
     display: flex;
@@ -112,7 +114,7 @@ header .navbar ul li a:hover::after {
     display: flex;
     flex-flow: row wrap-reverse;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     margin: 50px auto;
     padding: 0 20px;
 }
