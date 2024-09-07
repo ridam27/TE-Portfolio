@@ -18,7 +18,7 @@
 
 body{
     /* background-image: url('../img/bg.jpg'); */
-    background-color: #fff;
+    background-color: #c0c0c0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body{
 }
 
 header{
-    background-color: #f0f0f0;
+    background-color: #f0f0f000;
     padding: 1.5rem 3rem;
     width: calc(100% - 4rem);
     display: flex;
@@ -35,8 +35,8 @@ header{
     justify-content: space-between;
     /* border: 2px solid green; */
     border-radius: 30px;
-    backdrop-filter: blur(50px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* backdrop-filter: blur(50px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
 }
 
 header .logo{
@@ -86,7 +86,7 @@ header .navbar ul li a:hover::after {
 }
 
 
-/* MAGNETIC BUTTONS */
+/* MAGNETIC BUTTONS ---> CSS Starts */
 
 .magnetic {
     display: inline-block;
@@ -110,6 +110,8 @@ header .navbar ul li a:hover::after {
     color: white;
 }
 
+/* MAGNETIC BUTTONS ---> CSS Ends */
+
 .intro-section{
     display: flex;
     flex-flow: row wrap-reverse;
@@ -127,20 +129,72 @@ header .navbar ul li a:hover::after {
 
 /* Animated Text >>> Typewriter Effect ---> CSS Starts  */
 
-.type1{
+.typewriter{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.text{
     display: inline-block;
     color: #000000;
     font-family: var(--font-paragraph);
     font-size: 2.5rem;
 }
 
-.type2{
-    margin-left: 0.5rem;
-    display: inline-block;
+
+
+.option {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.option li {
+    list-style: none;
     color: var(--accent-color);
-    font-family: var(--font-paragraph);
     font-size: 2.5rem;
-    margin-bottom: 80px;
+    font-family: var(--font-paragraph);
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.option li span {
+    position: relative;
+    margin: 5px 0;
+}
+
+.option li span::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #c0c0c0;
+    border-left: 2px solid var(--accent-color);
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 0.5rem);
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 /* Animated Text >>> Typewriter Effect ---> CSS Ends  */
