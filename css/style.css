@@ -204,7 +204,7 @@ header .navbar ul li a:hover::after {
     font-size: 1.2rem;
 }
 
-.intro-img{
+.intro-img{ 
     height: 550px;
     width: 550px;
 }
