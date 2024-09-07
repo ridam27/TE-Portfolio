@@ -16,13 +16,9 @@
     --font-primary:"Poppins", sans-serif;
 }
 
-body{
-    /* background-image: url('../img/bg.jpg'); */
+.grey-bg{
+    height: calc(100vh + 6.5rem);
     background-color: #c0c0c0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 header{
@@ -30,13 +26,9 @@ header{
     padding: 1.5rem 3rem;
     width: calc(100% - 4rem);
     display: flex;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
     align-items: center;
     justify-content: space-between;
-    /* border: 2px solid green; */
-    border-radius: 30px;
-    /* backdrop-filter: blur(50px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
 }
 
 header .logo{
@@ -216,7 +208,7 @@ header .navbar ul li a:hover::after {
 /* Project-Section ---> CSS Starts  */
 
 .project-section{
-    margin:3rem 4.375rem ;
+    margin:4rem 4.375rem ;
 }
 
 .project-text{
