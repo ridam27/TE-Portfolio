@@ -16,6 +16,7 @@
     --font-primary:"Poppins", sans-serif;
 }
 
+
 .grey-bg{
     height: calc(100vh + 6.5rem);
     background-color: #c0c0c0;
@@ -87,18 +88,19 @@ header .navbar ul li a:hover::after {
 
 .magnet-button {
     padding: 10px 20px;
-    background-color: white;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
-    transition: transform 0.2s ease, background-color 0.8s ease, color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.8s ease, border-color 0.8s ease, color 0.3s ease;
 }
 
 .magnet-button:hover{
     background-color: var(--accent-color);
+    border-color: var(--accent-color);
     color: white;
 }
 
@@ -135,8 +137,6 @@ header .navbar ul li a:hover::after {
     font-family: var(--font-paragraph);
     font-size: 2.5rem;
 }
-
-
 
 .option {
     margin-left: 15px;
@@ -208,29 +208,33 @@ header .navbar ul li a:hover::after {
 /* Project-Section ---> CSS Starts  */
 
 .project-section{
-    margin:4rem 4.375rem ;
+
 }
 
 .project-text{
+    margin-top: 4rem;
+    margin-left: 4.375rem;
     font-family: var(--font-heading);
     font-size: 2.5rem;
     font-weight: 700;
-    padding: 0.25rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .wrapper {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 4rem;
+    padding: 4rem 1rem;
     display: flex;
     align-content: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
 
-.card {
+.project-card {
     position: relative;
     width: 325px;
     height: 450px;
@@ -238,9 +242,12 @@ header .navbar ul li a:hover::after {
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
-.poster {
+.project-img {
     position: relative;
     top: 0;
     left: 0;
@@ -249,7 +256,7 @@ header .navbar ul li a:hover::after {
     overflow: hidden;
 }
 
-.poster::before {
+.project-img::before {
     content: '';
     position: absolute;
     bottom: -45%;
@@ -260,11 +267,11 @@ header .navbar ul li a:hover::after {
     transition: .3s;
 }
 
-.card:hover .poster::before {
+.project-card:hover .project-img::before {
     bottom: 0;
 }
 
-.poster img {
+.project-img img {
     position: absolute;
     top: 0;
     left: 0;
@@ -274,7 +281,7 @@ header .navbar ul li a:hover::after {
     transition: .3s;
 }
 
-.card:hover .poster img {
+.project-card:hover .project-img img {
     transform: scale(1.1);
 }
 
@@ -292,7 +299,7 @@ header .navbar ul li a:hover::after {
     z-index: 2;
 }
 
-.card:hover .details {
+.project-card:hover .details {
     bottom: 0;
 }
 
@@ -350,11 +357,11 @@ header .navbar ul li a:hover::after {
     margin-bottom: 1em;
 }
 
-.details .cast h3 {
+.details .collaborators h3 {
     margin-bottom: .5em;
 }
 
-.details .cast ul {
+.details .collaborators ul {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -362,7 +369,7 @@ header .navbar ul li a:hover::after {
     width: 100%;
 }
 
-.details .cast ul li {
+.details .collaborators ul li {
     list-style: none;
     width: 55px;
     height: 55px;
@@ -371,9 +378,31 @@ header .navbar ul li a:hover::after {
     border: 1.5px solid #fff;
 }
 
-.details .cast ul li img {
+.details .collaborators ul li img {
     width: 100%;
     height: 100%;
 }
 
 /* Project-Section ---> CSS Ends  */
+
+/* Appear-on-Scroll Effect ---> CSS Starts  */
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(-100px); 
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
+
+    /* Animation CSS Properties >>> Just Copy and Paste */
+
+    /* animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; */
+
+/* Appear-on-Scroll Effect ---> CSS Ends  */
+
