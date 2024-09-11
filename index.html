@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Eclipse's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="only screen and (max-width:480px)" href="css/phone.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -27,7 +28,11 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
-
+        <div class="sidebar">
+            <!-- <input type="checkbox" id="menu-toggle"> -->
+            <i class="fa-solid fa-bars onclick=showSidebar() menu"></i>
+            <i class="fa-solid fa-xmark onclick=hideSidebar() cross"></i>
+        </div>
         <div class="magnetic">
             <button type="button" class="magnet-button" name="button">Contact Us</button>
             </div>

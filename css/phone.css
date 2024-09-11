@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.grey-bg{
+    background-color: #c0c0c0;
+}
+
+header .navbar{
+    display: none;
+}
+
+header{
+    padding: 2rem 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+header .sidebar{
+    display: flex;
+}
+
+header .sidebar .menu{
+    padding: 1.5rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    background-color: #1c1d20;
+    color: #ffffff;
+}
+
+header .sidebar .cross{
+    display: none;
+}
+
+header .magnetic{
+    display: none;
+}
+
+header .logo h2{
+    font-size: 1.8rem;  
+}
+
+.intro-section{
+    margin: 0px;
+}
+
+.intro-section .intro-img{
+    width: 70vw;
+    height: auto;
+}
+
+.intro-section img{
+
+}
