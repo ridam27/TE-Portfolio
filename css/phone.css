@@ -28,7 +28,7 @@ header .sidebar .menu{
     position: fixed;
     top: 18px;
     right: 32px;
-    padding: 1.5rem;
+    padding: 24px 25px;
     font-size: 1rem;
     border-radius: 50%;
     background-color: #1c1d20;
@@ -101,6 +101,6 @@ header .logo h2{
 }
 
 .intro-section .intro-text .magnet-button{
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
 }
