@@ -98,5 +98,9 @@ header .logo h2{
 }
 .intro-section .typewriter .option li{
     font-size: 1.3rem;
+}
 
+.intro-section .intro-text .magnet-button{
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
 }
