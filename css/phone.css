@@ -24,12 +24,43 @@ header .sidebar{
 }
 
 header .sidebar .menu{
+    position: fixed;
+    top: 18px;
+    right: 32px;
     padding: 1.5rem;
     font-size: 1rem;
     border-radius: 50%;
     background-color: #1c1d20;
     color: #ffffff;
+    z-index: 1;
+    transition: all 0.3s ease;
 }
+
+header .sidebar .menu::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    transform: scale(0);
+}
+
+header .sidebar .menu:hover::after,
+header .sidebar .menu:focus::after{
+    transform: scale(1);
+}
+
+/* header .sidebar .menu:hover{
+    cursor:pointer;
+    background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
+} */
+
 
 header .sidebar .cross{
     display: none;
