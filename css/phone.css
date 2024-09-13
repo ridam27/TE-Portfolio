@@ -80,7 +80,7 @@ header .sidebar{
     height: 100vh;
     width: 100vw;
     background-color: #181818;
-    padding: 7rem 4rem 2.5rem 4rem;
+    padding: 7rem 4rem 0rem 4rem;  
     z-index: 2;
     transition: transform 1s ease-in-out;
     flex-direction: column;
