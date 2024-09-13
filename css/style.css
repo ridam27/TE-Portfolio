@@ -45,7 +45,7 @@ header .navbar ul{
     align-items:center ;
     gap: 4rem;
 }
-header .sidebar{
+header .sidebar-toggle, header .sidebar{
     display: none;
 }
 
@@ -80,7 +80,6 @@ header .navbar ul li a:hover::after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
-
 
 /* MAGNETIC BUTTONS ---> CSS Starts */
 

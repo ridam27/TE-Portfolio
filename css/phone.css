@@ -5,6 +5,8 @@
 }
 .grey-bg{
     background-color: #c0c0c0;
+    height: calc(100vh + 0.5rem);
+    width: 100vw;
 }
 
 header .navbar{
@@ -20,11 +22,11 @@ header{
     align-items: center;
 }   
 
-header .sidebar{
+header .sidebar-toggle{
     display: flex;
 }
 
-header .sidebar .menu{
+header .sidebar-toggle .menu{
     position: fixed;
     top: 18px;
     right: 32px;
@@ -37,34 +39,126 @@ header .sidebar .menu{
     transition: all 0.3s ease;
 }
 
-header .sidebar .menu::after{
+header .sidebar-toggle .menu::after{
     content: '';
     position: absolute;
-    background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
+    background: linear-gradient(0deg, #027efb 0%,  rgba(0,3,255,1)100%);
     height: 100%;
     width: 100%;
-    transition: all 0.3s ease;
     border-radius: 50%;
+    transition: all 0.3s ease;
     z-index: -1;
     top: 0;
     left: 0;
-
+    
     transform: scale(0);
 }
 
-header .sidebar .menu:hover::after,
-header .sidebar .menu:focus::after{
+header .sidebar-toggle .menu:hover::after,
+header .sidebar-toggle .menu:focus::after{
     transform: scale(1);
 }
 
-/* header .sidebar .menu:hover{
-    cursor:pointer;
-    background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
-} */
-
-
-header .sidebar .cross{
+header .sidebar-toggle .cross{
+    z-index: 2;
     display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: #027efb;
+    color: white;
+    padding: 24px 25px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+header .sidebar{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #181818;
+    padding: 7rem 4rem 2.5rem 4rem;
+    z-index: 2;
+    transition: transform 1s ease-in-out;
+    flex-direction: column;
+    gap: 20.3rem;
+}
+
+header .sidebar .nav-items{
+    list-style: none;
+}
+
+header .sidebar .nav-items::before{
+    content: "NAVIGATION";
+    display: inline-block;
+    color: #b6b6b6;
+    font-family:"Lato", sans-serif;
+    font-size: 0.7rem;
+    width: 90%;
+    border-bottom: 1px solid #b6b6b6;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+header .sidebar .nav-items li a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+header .sidebar .nav-items li a::before{
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+}
+
+header .sidebar .nav-items li a:hover::before,
+header .sidebar .nav-items li .active::before{
+    opacity: 1;
+}
+header .sidebar .nav-items li a:hover, .active{
+    transform: translateX(1.5rem);
+}
+
+header .sidebar .social{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .sidebar .social::before{
+    content: "SOCIALS";
+    display: inline-block;
+    position: absolute;
+    bottom: 7.5rem;
+    color: #b6b6b6;
+    font-family:"Lato", sans-serif;
+    font-size: 0.7rem;
+    width: 70%;
+    border-top: 1px solid #b6b6b6;
+    padding-top: 1.5rem;
+}
+
+header .sidebar .social li a{
+    color: white;
+    text-decoration: none;
+    font-family:"Roboto", sans-serif;
 }
 
 header .magnetic{
@@ -90,6 +184,7 @@ header .logo h2{
 
 .intro-section .typewriter{
     max-height: 3rem;
+    margin-bottom: 3rem;
 }
 
 .intro-section .typewriter .text{
@@ -104,3 +199,4 @@ header .logo h2{
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
 }
+

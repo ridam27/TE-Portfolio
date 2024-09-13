@@ -8,7 +8,7 @@
     <title>Team Eclipse's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="only screen and (max-width:480px)" href="css/phone.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
@@ -29,9 +29,24 @@
             </ul>
         </div>
         <div class="sidebar">
+            <ul class="nav-items">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            
+                <ul class="social">
+                    <li><a href="#" class="active">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            
+        </div>
+        <div class="sidebar-toggle">
             <!-- <input type="checkbox" id="menu-toggle"> -->
-            <i class="fa-solid fa-bars onclick=showSidebar() menu"></i>
-            <i class="fa-solid fa-xmark onclick=hideSidebar() cross"></i>
+            <i class="fa-solid fa-bars menu" onclick="showSidebar(); showCross();"></i>
+            <i class="fa-solid fa-xmark cross" onclick="hideSidebar();hideCross();"></i>
         </div>
         <div class="magnetic">
             <button type="button" class="magnet-button" name="button">Contact Us</button>
@@ -202,5 +217,6 @@
 
 <script src="js\magneticbuttons.js"></script>
 <script src="js\SmoothScroll.js"></script>
+<script src="js\MenuToggle.js"></script>
 
 </html>
