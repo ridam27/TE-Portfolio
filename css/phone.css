@@ -73,7 +73,7 @@ header .sidebar-toggle .cross{
 }
 
 header .sidebar{
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     right: 0;
@@ -82,10 +82,12 @@ header .sidebar{
     background-color: #181818;
     padding: 7rem 4rem 7rem 4rem;  
     z-index: 2;
-    transition: transform 1s ease-in-out;
     flex-direction: column;
     gap: 15rem;
+    transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1); /* Smooth transition */
+    transform: translateX(100%);
 }
+
 
 header .sidebar .nav-items{
     list-style: none;
