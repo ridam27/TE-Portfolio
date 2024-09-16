@@ -179,7 +179,6 @@ header .logo h2{
 
 .intro-section .typewriter{
     max-height: 3rem;
-    margin-bottom: 3rem;
 }
 
 .intro-section .typewriter .text{
@@ -190,8 +189,17 @@ header .logo h2{
     font-size: 1.3rem;
 }
 
+.intro-section .intro-text2{
+    margin-top: 5vh;
+}
+
+.intro-section .intro-text2 p{
+    font-size: 1.6rem;
+}
+
 .intro-section .intro-text .magnet-button{
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
+    margin-top: 7vh;
 }
 
