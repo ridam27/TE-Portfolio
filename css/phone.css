@@ -16,7 +16,6 @@ header .navbar{
 header{
     padding: 2rem 0;
     margin: auto;
-    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +30,7 @@ header .sidebar-toggle .menu{
     top: 18px;
     right: 32px;
     padding: 24px 25px;
-    font-size: 1rem;
+    font-size: 4vw;
     border-radius: 50%;
     background-color: #1c1d20;
     color: #ffffff;
@@ -63,12 +62,12 @@ header .sidebar-toggle .cross{
     z-index: 2;
     display: none;
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    top: 18px;
+    right: 32px;
     background-color: #027efb;
     color: white;
     padding: 24px 25px;
-    font-size: 1rem;
+    font-size: 4vw;
     border-radius: 50%;
 }
 
@@ -161,7 +160,7 @@ header .magnetic{
 }
 
 header .logo h2{
-    font-size: 1.8rem;  
+    font-size: 6vw;  
 }
 
 .intro-section{
@@ -174,32 +173,32 @@ header .logo h2{
 }
 
 .intro-section .intro-text1{
-    font-size: 1.7rem;
+    font-size: 6.7vw;
 }
 
 .intro-section .typewriter{
-    max-height: 3rem;
+    max-height: 10vw;
 }
 
 .intro-section .typewriter .text{
-    font-size: 1.3rem;
+    font-size: 5vw;
 
 }
 .intro-section .typewriter .option li{
-    font-size: 1.3rem;
+    font-size: 5vw;
 }
 
 .intro-section .intro-text2{
-    margin-top: 5vh;
+    margin-top: 8vw;
 }
 
 .intro-section .intro-text2 p{
-    font-size: 1.6rem;
+    font-size: 6vw;
 }
 
 .intro-section .intro-text .magnet-button{
     padding: 0.8rem 1.2rem;
     font-size: 1rem;
-    margin-top: 7vh;
+    margin-top: 8vh;
 }
 
