@@ -515,7 +515,6 @@ header .navbar ul li a:hover::after {
     height: 50vh;
     width: 70vw;
     padding: 1rem;
-    background-color: #fdfdfd;
     margin: 4rem auto;
     display: flex;
     flex-wrap :nowrap;
@@ -538,7 +537,7 @@ header .navbar ul li a:hover::after {
     gap: 10px;
     margin-right: 1rem;
     scroll-margin: 1rem;
-    /* box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.1),-2px -2px 12px 0px rgba(0, 0, 0, 0.1);  */
+    scroll-snap-align: start;
 
     &:last-child{
         margin-right: 0;
@@ -553,24 +552,23 @@ header .navbar ul li a:hover::after {
     display: flex;
     flex-direction: column;
     padding: 0 2vw;
-    gap: 0.6vh;
 }
 
 .team-slider .member-card .member-details .member-name{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(2rem,3vw,5rem);
+    font-family: var(--font-primary);
+    font-size: clamp(1.5rem,3vw,5rem);
     font-weight: 700;
 }
 
 .team-slider .member-card .member-details .member-pos{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(1.5rem,1.5vw,4rem);
+    font-family: var(--font-heading);
+    font-size: clamp(1rem,1.5vw,4rem);
 
 }
 
 .team-slider .member-card .member-details .member-info{
     margin-top: 4vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  var(--font-paragraph);
     font-size: clamp(1rem,1.3vw,4rem);
 }
 
@@ -580,7 +578,7 @@ header .navbar ul li a:hover::after {
     background-color: black;
     color: white;
     padding: 12px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-primary);
     font-weight: 700;
     font-size: 1rem;
     border: none;
