@@ -261,3 +261,35 @@ header .logo h2{
     height: 60%;
     width: 90%;
 }
+
+footer .container{
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+.footer-content h3{
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.footer-content .list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.footer-content .social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
