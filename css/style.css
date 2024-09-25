@@ -615,7 +615,7 @@ footer {
     width: 33.3%;
 }
 
-h3 {
+.footer-content h3{
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
