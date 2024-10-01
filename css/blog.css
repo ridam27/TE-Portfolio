@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --primary-font:"Poppins", system-ui;
+    --secondary-font:"Roboto", system-ui;
+    --tertiary-font:"Lato", system-ui;
+}
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 8vh;
+}
+
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+}
+
+.nav-left .logo{
+    font-family:var(--primary-font);
+    font-weight: 700;
+    font-size: 700;
+    font-size: 4vh;
+}
+
+.nav-left .logo span{
+    color: blue;
+}
+
+.nav-left .nav-items{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav-left .nav-items li a{
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    color: black;
+    font-size: 1.05rem;
+}
+
+.nav-left .nav-items li{
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-left .nav-items li:hover{
+    font-weight: 500;
+    transform: scale(1.1);
+}
+
+.nav-right .btn{
+    
+}
