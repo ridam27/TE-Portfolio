@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
 
-:root{
+:root {
     --primary-font: "Poppins", system-ui;
-    --secondary-font:  "Roboto", system-ui;
+    --secondary-font: "Roboto", system-ui;
     --tertiary-font: "Lato", system-ui;
 
     --clr-heading: #OF172A;
@@ -17,7 +17,7 @@
 
 }
 
-.navbar{
+.navbar {
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -26,28 +26,28 @@
     padding: 4vh 8vh;
 }
 
-.nav-left{
+.nav-left {
     display: flex;
     flex-direction: row;
     gap: 6vw;
 }
 
-.nav-left .logo{
-    font-family:var(--primary-font);
+.nav-left .logo {
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 700;
     font-size: 4vh;
 }
 
-.nav-left .logo:hover{
+.nav-left .logo:hover {
     cursor: none;
 }
 
-.nav-left .logo span{
+.nav-left .logo span {
     color: var(--clr-accent);
 }
 
-.nav-left .nav-items{
+.nav-left .nav-items {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
     gap: 4vw;
 }
 
-.nav-left .nav-items li a{
+.nav-left .nav-items li a {
     text-decoration: none;
     font-family: var(--secondary-font);
     color: black;
@@ -63,21 +63,21 @@
     transition: all 0.3s ease-in-out;
 }
 
-.nav-left .nav-items li{
+.nav-left .nav-items li {
     transition: all 0.3s ease-in-out;
 }
 
-.nav-left .nav-items li:hover{
+.nav-left .nav-items li:hover {
     cursor: pointer;
     font-weight: 500;
     transform: scale(1.1);
 }
 
-.nav-left .nav-items li a:hover{
+.nav-left .nav-items li a:hover {
     color: var(--clr-accent);
 }
 
-.nav-right .btn{
+.nav-right .btn {
     outline: none;
     border: none;
     border-radius: 10px;
@@ -86,25 +86,25 @@
     font-weight: 600;
 }
 
-.nav-right .btn:hover{
+.nav-right .btn:hover {
     cursor: pointer;
 }
 
-.nav-right .btn-secondary{
+.nav-right .btn-secondary {
     background-color: white;
     color: var(--clr-accent);
 }
 
-.nav-right .btn-primary{
+.nav-right .btn-primary {
     background-color: var(--clr-accent);
     color: white;
 }
 
-.nav-right .btn-primary:hover{
+.nav-right .btn-primary:hover {
     background-color: rgb(0, 0, 230);
 }
 
-.blog-intro{
+.blog-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +114,7 @@
     gap: 3vh;
 }
 
-.blog-intro .intro-heading{
+.blog-intro .intro-heading {
     font-family: var(--primary-font);
     font-size: 7vh;
     line-height: 8.5vh;
@@ -123,7 +123,7 @@
     width: 60vw;
 }
 
-.blog-intro .intro-paragraph{
+.blog-intro .intro-paragraph {
     font-family: var(--secondary-font);
     width: 60vw;
     font-size: 2.8vh;
@@ -152,7 +152,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.blog-wrapper .blog-list .blog-item a{
+.blog-wrapper .blog-list .blog-item a {
     text-decoration: none;
     color: black;
 }
@@ -208,4 +208,96 @@
         grid-template-columns: 1fr;
         gap: 2vh;
     }
+}
+
+.newsletter-gradient-image {
+    background: linear-gradient(135deg, #95aeff, #d3afff);
+    border-radius: 15px;
+    width: 85%;
+    min-height: 60vh;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-gradient-image .newsletter-heading{
+    font-size: 3.25rem;
+    line-height: 8vh;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.newsletter-gradient-image .newsletter-paragraph{
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    text-align: center;
+    font-weight: 300;
+}
+
+.newsletter-gradient-image .newsletter-form{
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+    margin-top: 5vh;
+}
+
+.newsletter-gradient-image .newsletter-form .newsletter-input{
+    position: relative;
+}
+
+.newsletter-gradient-image .newsletter-form .email-input{
+    width: 30vw;
+    height: 7vh;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--tertiary-font);
+    border: 2px solid #00000000;
+    transition: all .25s ease;
+}
+
+.newsletter-gradient-image .newsletter-form .newsletter-input .email-label{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    font-size: 1rem;
+    padding: 0 auto;
+    color: grey;
+    font-family: var(--tertiary-font);
+    cursor: text;
+}
+
+.newsletter-gradient-image .newsletter-form .sub-btn{
+    height: 7vh;
+    width: 8vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #463fa6;
+    font-family: var(--tertiary-font);
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+.newsletter-gradient-image .newsletter-form .sub-btn:hover{
+    cursor: pointer;
+    background-color: #463fa6ec;
+}
+
+.newsletter-gradient-image .newsletter-form .email-input:focus-within{
+    border: 2px solid #000;
+    cursor: text;
+}
+
+.newsletter-gradient-image .newsletter-form .email-input:focus-within ~.email-label,
+.newsletter-gradient-image .newsletter-form .email-input:valid ~.email-label{
+    display: none;
 }
