@@ -211,7 +211,7 @@
 }
 
 .newsletter-gradient-image {
-    background: linear-gradient(135deg, #95aeff, #d3afff);
+    background: linear-gradient(135deg, #dae4ff, #e9d6ff);
     border-radius: 15px;
     width: 85%;
     min-height: 60vh;
@@ -285,6 +285,7 @@
     font-size: 1rem;
     color: white;
     font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .newsletter-gradient-image .newsletter-form .sub-btn:hover{
