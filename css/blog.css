@@ -317,7 +317,7 @@ footer{
 footer::after{
     content: "";
     width: 100vw;
-    height: 20vh;
+    height: 10vh;
     background-color: #fff;
     clip-path: polygon(0 0, 100% 0%, 100% 0%, 0 100%);
     position: absolute;
@@ -463,4 +463,21 @@ footer::after{
 .footer-contact .contact-links p a:hover{
     color: var(--clr-accent);
     font-weight: 600;
+}
+
+.bottom-bar{
+    padding: 2vh;
+    position: absolute;
+    
+    bottom: 0;
+    width: 100vw;
+    background-color: transparent;
+    backdrop-filter: blur(20px) ;
+    
+}
+
+.bottom-bar p{
+    font-size: 2.5vh;
+    color: #fff;
+    text-align: center;
 }
