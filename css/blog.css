@@ -377,6 +377,7 @@ footer::after{
 .footer-logo .social-icons svg:hover{
     transform: scale(1.1);
     fill: var(--clr-accent);
+    box-shadow: 1px 1px 2px #ffffffaf;
 }
 
 .footer-links{
@@ -419,6 +420,7 @@ footer::after{
 .footer-links ul li a:hover{
     color: var(--clr-accent);
     font-weight: 600;
+    text-shadow: 1px 1px 1px #ffffffaf;
 }
 
 .footer-contact{
@@ -463,6 +465,7 @@ footer::after{
 .footer-contact .contact-links p a:hover{
     color: var(--clr-accent);
     font-weight: 600;
+    text-shadow: 1px 1px 1px #ffffffaf;
 }
 
 .bottom-bar{
