@@ -1,0 +1,228 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff; /* White background for the header */
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    color: #111; /* Darker color for emphasis */
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cccccc; /* Light gray background */
+    padding: 20px; /* Uniform padding */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjusted for responsiveness */
+    max-width: 1500px; /* Max width for larger screens */
+    margin: 20px auto; /* Centered with margin */
+}
+
+/* Text section styling */
+.text-section {
+    flex: 1;
+    padding-right: 20px; /* Spacing between text and image */
+}
+
+.text-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #111;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.contact-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 2px solid #333;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.contact-btn:hover {
+    background-color: #333; /* Dark background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Image section styling */
+.image-section {
+    flex: 1;
+    text-align: right; /* Align image to the right */
+}
+
+.image-section img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Featured Projects Section */
+.featured-projects {
+    max-width: 1200px;
+    margin: 10vh auto 0;
+    padding: 0 20px; /* Padding for smaller screens */
+}
+
+.featured-projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.featured-projects p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Project Card Styling */
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+}
+
+.project-info small {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.project-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.project-info p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-info ul li {
+    margin-bottom: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .image-section {
+        margin-top: 20px; /* Add spacing for smaller screens */
+        text-align: center; /* Center images */
+    }
+
+    .project {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0; /* Padding for the footer */
+}
+
+.footer-container {
+    max-width: 1200px; /* Max width for the footer content */
+    margin: 0 auto; /* Center the footer */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.footer-links {
+    flex: 1; /* Allow it to take available space */
+}
+
+.footer-links h3 {
+    font-size: 1.5em; /* Slightly larger heading */
+    margin-bottom: 10px; /* Spacing below heading */
+}
+
+.footer-links ul {
+    list-style: none; /* Remove default list styling */
+    text-align: center;
+}
+
+.footer-links ul li {
+    margin: 5px 0; /* Space between links */
+}
+
+.footer-links a {
+    color: #fff; /* White color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.footer-links a:hover {
+    color: #f1c40f; /* Change color on hover */
+}
+
+.footer-copyright {
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.footer-copyright p {
+    margin: 0; /* Remove default margin */
+    font-size: 0.9em; /* Smaller text for copyright notice */
+}

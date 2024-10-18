@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #34495e;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px 50px;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    color: #fff;
+    margin-top: 70px;
+}
+
+.hero .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 8px solid #fff;
+    display: centre;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 100px 50px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 55px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #16a085;
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #1abc9c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #16a085;
+}
+
+/* General styling for the project section */
+#projects {
+    padding: 50px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.project {
+    display: inline-block;
+    width: 25%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the project images */
+.project-img {
+    width: 50%;
+    height: 50;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display : centre;
+}
+
+/* Hover effect for images */
+.project:hover .project-img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Project titles */
+.project h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+footer {
+    background: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
