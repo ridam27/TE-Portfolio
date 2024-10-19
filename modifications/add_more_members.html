@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Form</title>
+    <link rel="stylesheet" href="add_more_members.css">
+</head>
+
+<body>
+
+    <form id="student-form" method="post" name="student-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="photo_url">Photo URL</label>
+        <input type="url" id="photo_url" name="photo_url" required>
+
+        <label for="skills">Skills (Comma-separated)</label>
+        <input type="text" id="skills" name="skills" required>
+
+        <label for="projects">Projects (Comma-separated)</label>
+        <input type="text" id="projects" name="projects" required>
+
+        <label for="degree">Degree</label>
+        <input type="text" id="degree" name="degree" required>
+
+        <label for="post">Post</label>
+        <input type="text" id="post" name="post" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="GoogleSheets.js"></script>
+
+</body>
+
+</html>
