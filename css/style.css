@@ -604,21 +604,28 @@ header .navbar ul li a:hover::after {
     font-weight: 700;
 }
 
-.other-members p{
-    text-align: center;
-    padding: 4.2rem 3rem;
-    border-radius: 20px;
+.other-members .other-members-content{
     background: linear-gradient(to right, #e0eafc, #cfdef3);
+    padding: 4.2rem 3rem;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 70vw;
-    height: 350px;
-    margin: 4rem auto 3rem auto;
+    height: auto;
+    min-height: 350px;
+    border-radius: 20px;
+}
+
+.other-members .other-members-content p{
+    text-align: center;
     font-family: var(--font-primary);
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.other-members p .other-members-btn{
-    margin-top: 3.5rem;
+.other-members .other-members-content .other-members-btn{
     border-radius: 15px;
     border: none;
     background-color: #000;
@@ -630,12 +637,62 @@ header .navbar ul li a:hover::after {
     transition: all .3s ease;
 }
 
-.other-members p .other-members-btn:hover{
+.other-members .other-members-content .other-members-btn:hover{
     background-color: var(--accent-color);
 }
 
-/* Other Members Section ---> CSS Ends */
+@media screen and (max-width: 1024px) {
+    .other-members .other-members-content {
+        width: 80vw;
+        padding: 3rem 2rem;
+    }
+    
+    .other-members .other-members-content p {
+        font-size: 1.5rem;
+    }
+    
+    .other-members .other-members-content .other-members-btn {
+        font-size: 1.3rem;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .other-members .other-members-content {
+        width: 90vw;
+        padding: 2.5rem 1.5rem;
+        min-height: 300px;
+    }
+    
+    .other-members .other-members-content p {
+        font-size: 1.3rem;
+    }
+    
+    .other-members .other-members-content .other-members-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .other-members .other-members-content {
+        width: 90vw;
+        padding: 2rem 1rem;
+        min-height: 250px;
+        margin: 3rem auto;
+    }
+    
+    .other-members .other-members-content p {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    .other-members .other-members-content .other-members-btn {
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+    }
+}
+
+/* Other Members Section ---> CSS Ends */
 
 
 /* Footer ---> CSS Starts */
