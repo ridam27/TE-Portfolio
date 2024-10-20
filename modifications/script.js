@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="projects"><strong>Projects:</strong> 
                         ${student.projects.map(project => `<span>${project}</span>`).join('')}
                     </div>
-                    <a href="individual.html?name=${studentName}" class="view-portfolio">View Portfolio</a>
+                    <a href="individual.html?name=${student.name}" class="view-portfolio">View Portfolio</a>
                 `;
                 
                 grid.appendChild(card);

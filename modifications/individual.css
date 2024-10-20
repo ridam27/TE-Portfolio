@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+
+#portfolio {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "photo info"
+        "skills projects";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    grid-area: header;
+    color: #2c3e50;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img {
+    grid-area: photo;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info {
+    grid-area: info;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.skills {
+    grid-area: skills;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.projects {
+    grid-area: projects;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #2c3e50;
+}
+
+.skills span, .projects span {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    #portfolio {
+        grid-template-areas:
+            "header"
+            "photo"
+            "info"
+            "skills"
+            "projects";
+        grid-template-columns: 1fr;
+    }
+}
