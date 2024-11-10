@@ -22,6 +22,10 @@ For detailed documentation, [click here](DOCUMENTATION_LINK).
 
 ## References
 
+- [Awwards](https://www.awwwards.com)
+- [CSS-Tricks](https://css-tricks.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+- [W3Schools](https://www.w3schools.com/)
 - [Google Sheets API](https://developers.google.com/sheets/api)
 - [Google Apps Script](https://developers.google.com/apps-script)
 - [Netlify Documentation](https://docs.netlify.com)
