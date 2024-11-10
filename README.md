@@ -4,6 +4,9 @@
 <br>
 A responsive team portfolio website designed to showcase group projects, skills, and team members in a visually engaging and interactive format. Built using HTML, CSS, and JavaScript, this site is fully responsive and includes integration with Google Sheets and App Script for dynamic data storage.
 
+## Deployment
+The website is deployed on [Netlify](https://eclipseportfolio.netlify.app).
+
 ## Features
 
 - **Landing Page**: Introduction to the team.
@@ -16,9 +19,6 @@ A responsive team portfolio website designed to showcase group projects, skills,
 
 ## Documentation
 For detailed documentation, [click here](DOCUMENTATION_LINK).
-
-## Deployment
-The website is deployed on [Netlify](https://eclipseportfolio.netlify.app).
 
 ## References
 
