@@ -18,7 +18,7 @@ A responsive team portfolio website designed to showcase group projects, skills,
 For detailed documentation, [click here](DOCUMENTATION_LINK).
 
 ## Deployment
-The website is deployed on [Netlify](https://www.netlify.com).
+The website is deployed on [Netlify](https://www.eclipseportfolio.netlify.app).
 
 ## References
 
